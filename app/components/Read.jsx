@@ -12,7 +12,7 @@ function Read({id}) {
     });
     const router =useRouter();
     const getData = async (uid) => {
-        const data = await fetch(`/api/createNode?search=${uid}`);
+        const data = await fetch(`https://note-three-sigma.vercel.app/api/createNode?search=${uid}`);
         const res = await data.json();
       
        setdataSet(res);
@@ -21,7 +21,7 @@ function Read({id}) {
         
     }
     const Delete = async (name) => {
-      let res=  await fetch(`/api/createNode?id=${name}`, {
+      let res=  await fetch(`https://note-three-sigma.vercel.app/api/createNode?id=${name}`, {
             method: "DELETE"
         });
         if(res.ok){
