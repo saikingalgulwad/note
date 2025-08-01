@@ -16,7 +16,7 @@ export default function SimpleForm() {
 
   const handleSubmit = async(e) => {
     e.preventDefault();
-      const res =await fetch ("/api/createNode",{
+      const res =await fetch ("https://note-three-sigma.vercel.app/api/createNode",{
       method:"POST",
       headers:{
         "Content-type":"application/json",
