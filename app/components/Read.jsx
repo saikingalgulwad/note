@@ -63,9 +63,9 @@ getData(id);
         {dataSet.title}
         </h1>
     
-        <p className="text-lg text-gray-600 dark:text-gray-300 mb-5">
+        <pre className="text-lg text-gray-600 dark:text-gray-300 mb-5">
         {dataSet.note}
-        </p>
+        </pre>
 
          <button
                                         onClick={() => Delete(dataSet._id)}
